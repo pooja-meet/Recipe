@@ -7,13 +7,16 @@ export default function Recipe() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
 
+    const apiKey = import.meta.env.VITE_MEAL_API_KEY;
+
     useEffect(() => {
+     
         const fetchMeals = async () => {
             setLoading(true);
             setError("");
 
             try {
-                const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${encodeURIComponent(query)}`;
+                const url = `${apiKey}=${encodeURIComponent(query)}`;
 
                 const response = await fetch(url);
 
