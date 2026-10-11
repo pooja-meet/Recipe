@@ -1,0 +1,20 @@
+
+.message {
+  text-align: center;
+  margin: 45px auto;
+  padding: 10px 20px;
+  color: #555;
+  font-size: 18px;
+}
+
+.message a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #e85d04;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}
