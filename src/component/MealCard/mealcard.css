@@ -1,6 +1,6 @@
 .meal-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 25px;
     max-width: 1400px;
     margin: 0 auto;
